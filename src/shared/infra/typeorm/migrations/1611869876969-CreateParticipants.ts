@@ -24,7 +24,7 @@ export default class CreateParticipants1611869876969
             isNullable: true,
           },
           {
-            name: 'number_phone',
+            name: 'phone_number',
             type: 'varchar',
           },
           {
