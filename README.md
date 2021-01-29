@@ -7,6 +7,7 @@ Para executar este projeto é necessário ter instalado os gerenciadores de paco
 Utilizei containers docker com imagem do postgres e o typeorm para gerenciamento do banco de dados.
 
 ### Ao clonar o repositório acesse o diretério raiz (gatinhosufrn-sorteio/) e execute:
+  ####
   - Com o npm:
     $ npm install
   - Com o yarn:
