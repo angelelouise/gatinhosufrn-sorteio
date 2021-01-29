@@ -27,10 +27,17 @@ class CreateUserService {
     phone_number,
     password,
   }: RequestDTO): Promise<User> {
-    const checkUserExists = await this.usersRepository.findByEmail(email);
+    const checkUserEmailExists = await this.usersRepository.findByEmail(email);
+    const checkUsernameExists = await this.usersRepository.findByUsername(
+      username,
+    );
 
-    if (checkUserExists) {
+    if (checkUserEmailExists) {
       throw new AppError('E-mail already exists.');
+    }
+
+    if (checkUsernameExists) {
+      throw new AppError('Username already exists.');
     }
 
     const hashedPassword = await hash(password, 8);
