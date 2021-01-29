@@ -6,21 +6,21 @@ Para executar este projeto é necessário ter instalado os gerenciadores de paco
 
 Utilizei containers docker com imagem do postgres e o typeorm para gerenciamento do banco de dados.
 
-#### Ao clonar o repositório acesse o diretério raiz (gatinhosufrn-sorteio/) e execute:
+### Ao clonar o repositório acesse o diretério raiz (gatinhosufrn-sorteio/) e execute:
   - Com o npm:
     $ npm install
   - Com o yarn:
     $ yarn
-#### Configuração do TypeORM:
+### Configuração do TypeORM:
   Após instalação das dependências, renomeie o arquivo 'ormconfig.example.json' para 'ormconfig.json'
   e preencha com as credênciais da sua database.
 
-#### Execução do projeto
-  Com o banco de dados configurado e rodando, execute o projeto através do comando:
+### Execução do projeto
+  #### Com o banco de dados configurado e rodando, execute o projeto através do comando:
     - Com npm:
-      npm run dev:server
+      $ npm run dev:server
     - Com yarn:
-      yarn dev:server
+      $ yarn dev:server
 
-#### Testes práticos
+### Testes práticos
   Para os testes práticos utilizei o software Insomnia para simular as requisições na api
