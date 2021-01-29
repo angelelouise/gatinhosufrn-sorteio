@@ -12,6 +12,12 @@ class ParticipantsRepository implements IParticipantsRepository {
     this.ormRepository = getRepository(Participant);
   }
 
+  public async findAllParticipants(): Promise<Participant[]> {
+    const participants = await this.ormRepository.find();
+
+    return participants;
+  }
+
   public async findById(id: string): Promise<Participant | undefined> {
     const participant = await this.ormRepository.findOne(id);
 

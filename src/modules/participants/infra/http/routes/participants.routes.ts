@@ -13,4 +13,6 @@ participantsRouter.post(
   participantsController.create,
 );
 
+participantsRouter.get('/', ensureAuthenticated, participantsController.index);
+
 export default participantsRouter;
