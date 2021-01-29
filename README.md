@@ -8,10 +8,10 @@ Utilizei containers docker com imagem do postgres e o typeorm para gerenciamento
 
 ### Depois clonar o repositório acesse o diretério raiz (gatinhosufrn-sorteio/) para instalar as dependências
   #### Execute:
-  - Com o npm:
-    $ npm install
-  - Com o yarn:
-    $ yarn
+    - Com o npm:
+      $ npm install
+    - Com o yarn:
+      $ yarn
 ### Configuração do TypeORM:
   Após instalação das dependências, renomeie o arquivo 'ormconfig.example.json' para 'ormconfig.json'
   e preencha com as credênciais da sua database.
